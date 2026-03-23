@@ -172,7 +172,7 @@ export default function ConnectorDetailPage() {
     () =>
       packageDetails && metadata
         ? getDisplayName(packageDetails.name, metadata.vendor)
-        : name || '',
+        : getDisplayName(name || ''),
     [packageDetails, metadata, name]
   );
   const { overview, setup } = useMemo(

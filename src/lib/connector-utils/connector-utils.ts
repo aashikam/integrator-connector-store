@@ -34,7 +34,10 @@ const CAPITALIZATION_DICTIONARY: Record<string, string> = {
   // Cloud Providers & Services
   aws: 'AWS',
   gcp: 'GCP',
+  gcloud: 'GCloud',
   azure: 'Azure',
+  ibm: 'IBM',
+  sap: 'SAP',
   s3: 'S3',
   sqs: 'SQS',
   sns: 'SNS',
@@ -61,6 +64,12 @@ const CAPITALIZATION_DICTIONARY: Record<string, string> = {
   ip: 'IP',
   dns: 'DNS',
   ldap: 'LDAP',
+  jdbc: 'JDBC',
+  jms: 'JMS',
+  nats: 'NATS',
+  scim: 'SCIM',
+  ocpi: 'OCPI',
+  oauth2: 'OAuth2',
 
   // Data Formats
   xml: 'XML',
@@ -77,12 +86,16 @@ const CAPITALIZATION_DICTIONARY: Record<string, string> = {
   saml: 'SAML',
   openid: 'OpenID',
 
-  // Messaging
+  // Messaging & Streaming
   rss: 'RSS',
   sms: 'SMS',
   mms: 'MMS',
   mqtt: 'MQTT',
   amqp: 'AMQP',
+  kafka: 'Kafka',
+  rabbitmq: 'RabbitMQ',
+  ibmmq: 'IBM MQ',
+  solace: 'Solace',
 
   // Databases
   mysql: 'MySQL',
@@ -91,8 +104,13 @@ const CAPITALIZATION_DICTIONARY: Record<string, string> = {
   redis: 'Redis',
   mssql: 'MSSQL',
   mariadb: 'MariaDB',
+  oracledb: 'OracleDB',
+  snowflake: 'Snowflake',
+  elasticsearch: 'Elasticsearch',
+  h2: 'H2',
+  impala: 'Impala',
 
-  // Platforms & Companies (common ones)
+  // Platforms & Companies
   github: 'GitHub',
   gitlab: 'GitLab',
   bitbucket: 'Bitbucket',
@@ -119,6 +137,25 @@ const CAPITALIZATION_DICTIONARY: Record<string, string> = {
   onedrive: 'OneDrive',
   googledrive: 'GoogleDrive',
   googleapis: 'GoogleAPIs',
+  gmail: 'Gmail',
+  gcalendar: 'GCalendar',
+  docusign: 'DocuSign',
+  netsuite: 'NetSuite',
+  quickbooks: 'QuickBooks',
+  pagerduty: 'PagerDuty',
+  newrelic: 'New Relic',
+  launchdarkly: 'LaunchDarkly',
+  whatsapp: 'WhatsApp',
+  spotify: 'Spotify',
+  vimeo: 'Vimeo',
+  trello: 'Trello',
+  notion: 'Notion',
+  zoom: 'Zoom',
+  asana: 'Asana',
+  wordpress: 'WordPress',
+  cdata: 'CData',
+  tableau: 'Tableau',
+  mistral: 'Mistral',
 
   // Technologies
   iot: 'IoT',
@@ -135,6 +172,29 @@ const CAPITALIZATION_DICTIONARY: Record<string, string> = {
   jpg: 'JPG',
   jpeg: 'JPEG',
   svg: 'SVG',
+  bi: 'BI',
+  crm: 'CRM',
+  ctg: 'CTG',
+  cdc: 'CDC',
+
+  // Healthcare & Financial Standards
+  hl7: 'HL7',
+  fhir: 'FHIR',
+  ccda: 'CCDA',
+  ips: 'IPS',
+  edifact: 'EDIFACT',
+  iso20022: 'ISO 20022',
+  iso8583: 'ISO 8583',
+
+  // Observability
+  prometheus: 'Prometheus',
+  jaeger: 'Jaeger',
+  zipkin: 'Zipkin',
+
+  // Microsoft
+  excel: 'Excel',
+  outlook: 'Outlook',
+  teams: 'Teams',
 };
 
 /**
