@@ -17,7 +17,8 @@
 */
 
 import React from 'react';
-import { Breadcrumbs, Link, Typography } from '@wso2/oxygen-ui';
+import { Breadcrumbs, Typography } from '@wso2/oxygen-ui';
+import { Link } from 'react-router-dom';
 import { ChevronRight } from '@wso2/oxygen-ui-icons-react';
 
 interface BreadcrumbsNavProps {
@@ -27,9 +28,14 @@ interface BreadcrumbsNavProps {
 const BreadcrumbsNav: React.FC<BreadcrumbsNavProps> = ({ connectorName }) => (
   <Breadcrumbs separator={<ChevronRight size={16} />} sx={{ fontSize: 14 }}>
     <Link
-      href="/"
-      underline="hover"
-      sx={{ display: 'flex', alignItems: 'center', gap: 0.5, color: 'text.secondary' }}
+      to="/"
+      style={{
+        display: 'flex',
+        alignItems: 'center',
+        gap: 4,
+        color: 'inherit',
+        textDecoration: 'none',
+      }}
     >
       Connector Store
     </Link>
