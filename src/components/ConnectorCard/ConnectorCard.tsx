@@ -122,7 +122,7 @@ function ConnectorCard({ connector, effectiveMode }: ConnectorCardProps) {
     if (!el) return;
 
     const measure = () => {
-      setNeedsTruncation(el.scrollHeight > el.clientHeight);
+      setNeedsTruncation(el.scrollHeight > el.clientHeight + 1);
     };
 
     measure();
